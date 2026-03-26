@@ -10,7 +10,7 @@ st.set_page_config(page_title='Tips Dashboard',
                    initial_sidebar_state='expanded')
 
 # loading Data
-df= pd.read_csv(r"C:\Users\Lenovo\OneDrive\Desktop\Python Course\Data Analysis\tips.csv")
+df = pd.read_csv("tips.csv")
 
 df['total_bill'] = pd.to_numeric(df['total_bill'], errors='coerce')
 
